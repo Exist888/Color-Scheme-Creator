@@ -4,7 +4,7 @@
 - Choose your desired color scheme types from the RGB color wheel
 - Easily compare different color schemes from the same starting color
 - Copy hexadecimal color codes to the clipboard for easy use in other design tools
-- Ready to try it out? Go to <a href="https://color-scheme-creator-exist888.netlify.app/">__color scheme creator app__</a>
+- Ready to try it out? Go to my <a href="https://color-scheme-creator-exist888.netlify.app/">__color scheme creator app__</a>
 <br/>
 
 <img src="https://github.com/user-attachments/assets/771a5310-d3b8-4962-af18-afa906328729" alt="Project Hero Image" width="620">
