@@ -1,0 +1,101 @@
+<html lang="en">
+    <head>
+        <title>Color Scheme Creator</title>
+        <meta name="description" content="Quickly generate color schemes 
+            for any type of design with Color Scheme Creator.">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="icon" href="/images/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/tooltip.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="wide-container">
+                <a href="index.html">
+                    <span class="logo"><i class="fa-solid fa-paintbrush" aria-label="paintbrush"></i>
+                        Color Scheme Creator
+                    </span>
+                </a>
+                <nav>
+                    <a href="https://linkedin.com/in/filip-herbst" target="_blank">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <i class="fa-solid fa-paintbrush fa-paintbrush-deco" aria-hidden="true"></i>
+        <i class="fa-solid fa-droplet fa-droplet-deco" aria-hidden="true"></i>
+        <i class="fa-solid fa-palette fa-palette-deco" aria-hidden="true"></i>
+
+        <main class="medium-container">
+            <h1>Generate color schemes for your next design</h1>
+            <div class="app-container" id="app-container">
+                <section class="color-scheme-form-section">
+                    <form class="color-scheme-form" id="color-scheme-form">
+                        <div class="input-starting-color-container">
+                            <label for="input-starting-color">Starting color:</label>
+                            <input id="input-starting-color" value="#0000ff" type="color">
+                            <button class="small-btn randomize-btn" id="randomize-btn" type="button">
+                                Randomize
+                            </button>
+                        </div>
+                        <div class="select-color-scheme-type-container">
+                            <label for="select-color-scheme-type">Color scheme type:</label>
+                            <select id="select-color-scheme-type">
+                                <option value="monochrome" selected>Monochromatic</option>
+                                <option value="monochrome-dark">Monochromatic (dark)</option>
+                                <option value="monochrome-light">Monochromatic (light)</option>
+                                <option value="analogic">Analogous</option>
+                                <option value="complement">Complementary</option>
+                                <option value="analogic-complement">Analogous complementary</option>
+                                <option value="triad">Triadic</option>
+                            </select>
+                            <button class="small-btn tooltip-btn" id="tooltip-btn" type="button"
+                                aria-label="What are color scheme types?" aria-describedby="tooltip-modal">
+                                ?
+                            </button>
+                        </div>
+                        <button class="submit-btn" id="submit-btn" type="submit">
+                            Get color scheme <i class="fa-solid fa-fill-drip"></i>
+                        </button>
+                    </form>
+                </section>
+
+                <section class="display-colors-section" id="display-colors-section"></section>
+            </div>
+
+            <div id="tooltip-modal-placeholder"></div>
+
+            <button class="hidden scroll-to-top-btn" id="scroll-to-top-btn" 
+                type="button" aria-label="Scroll to top">
+                <i class="fa-solid fa-caret-up"></i>
+            </button>
+        </main>
+
+        <footer class="medium-container">
+            <p>&copy <span id="copyright-year"></span> | Coded by 
+                <a href="https://www.linkedin.com/in/filip-herbst/" target="_blank">
+                    Filip Herbst
+                </a>
+            </p>
+            <div class="footer-icons-container">
+                <a class="footer-icon" href="https://www.linkedin.com/in/filip-herbst" target="_blank">
+                    <i class="fa-brands fa-linkedin" aria-label="LinkedIn icon"></i>
+                </a>
+                <a class="footer-icon" href="https://github.com/exist888" target="_blank">
+                    <i class="fa-brands fa-github" aria-label="GitHub icon"></i>
+                </a>
+            </div>
+        </footer>
+
+        <script src="/js/index.js"></script>
+        <script src="/js/tooltip.js"></script>
+    </body>
+</html>

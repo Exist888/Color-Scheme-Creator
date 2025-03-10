@@ -1,0 +1,446 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+}
+
+
+/* DECORATION */
+.fa-paintbrush-deco {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+    font-size: 5.5rem;
+    top: 1.725em;
+    right: 10%;
+}
+
+.fa-droplet-deco,
+.fa-palette-deco {
+    display: none;
+}
+
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 1.75rem;
+}
+
+
+/* LAYOUT */
+.wide-container, 
+.medium-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.wide-container {
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.75em;
+    row-gap: 0.75em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medium-container {
+    max-width: 900px;
+}
+
+
+/* SHARED STYLES */
+button, select {
+    font-family: inherit;
+    transition: transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input, select, .submit-btn {
+    color: inherit;
+    font-size: 1rem;
+    width: 100%;
+    height: 2.75rem;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    background-color: transparent;
+}
+
+input:hover, select:hover, .submit-btn:hover,
+input:focus, select:focus  {
+    background-color: #f1f3f3;
+}
+
+button:focus {
+    background-color: #ebf9f9;
+}
+
+a, input, select, button {
+    cursor: pointer;
+}
+
+.small-btn {
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: none;
+    color: #5e5e5e;
+    background-color: #eef1f1;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0.5em 0 0 0.75em;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* HEADER */
+header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 1em 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: 900;
+    background: linear-gradient(to right, #c1a1fc, #8fabff, #81e7ee);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header .fa-solid {
+    margin-right: 0.25em;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #b3c6ff;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:focus {
+    color: #bfbfbf;
+}
+
+
+/* MAIN */
+main h1 {
+    margin: 1.75em 0;
+}
+
+.app-container {
+    background-color: #fff;
+    color: #151515;
+    border-radius: 3px;
+}
+
+
+/* MAIN - FORM */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.25em;
+    padding: 1.75em 1em 3em;
+    margin-bottom: 0;
+}
+
+.input-starting-color-container,  
+.select-color-scheme-type-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+input {
+    padding: 0.25em;
+}
+
+.randomize-btn {
+    width: 8em;
+}
+
+.randomize-btn:hover {
+    background: linear-gradient(to right, #c1a1fc, #8fabff, #81e7ee);
+    color: #000;
+}
+
+select {
+    padding: 0 1em;
+}
+
+.tooltip-btn {
+    width: 3em;
+}
+
+.tooltip-btn:hover {
+    background-color: #dce5e5;
+    color: #1c1c1c;
+}
+
+.submit-btn {
+    margin-top: 0.5em;
+}
+
+.submit-btn i {
+    margin-left: 0.35em;
+}
+
+
+/* MAIN - DISPLAY COLORS SECTION */
+.color-box {
+    height: 9em;
+}
+
+.color-code-btn {
+    font-size: 1rem;
+    position: absolute;
+    right: 10%;
+    margin-top: -3em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 8.5em;
+    padding: 0.35em 0;
+    border-radius: 3px;
+    border: none;
+}
+
+.color-code-btn:hover {
+    background-color: #dce5e5;
+}
+
+.display-colors-section :last-child .color-box {
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* MAIN - ERROR MESSAGE */
+.error-message {
+    padding: 1.5em;
+    margin-top: -3em;
+}
+
+.error-message p {
+    font-weight: 500;
+    background-color: #f8da7f;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border-radius: 2px;
+    margin: 0.25em auto 0.5em auto;
+}
+
+.error-message a {
+    color: #0000c2;
+    font-weight: 600;
+}
+
+
+/* SCROLL TO TOP BTN */
+.scroll-to-top-btn {
+    background-color: #8fabff;
+    border: none;
+    border-radius: 5px;
+    padding: 0 0.875em;
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+}
+
+.scroll-to-top-btn:hover,
+.scroll-to-top-btn:focus {
+    background-color: #81e7ee;
+}
+
+.fa-caret-up {
+    font-size: 2.25rem;
+    color: #1c1c1c;
+    margin-bottom: -0.1em;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 12em 0 2em;
+    text-align: center;
+}
+
+footer a {
+    color: #8fabff;
+}
+
+footer a:hover {
+    color: #81e7ee;
+}
+
+footer a:focus {
+    color: #bfbfbf;
+}
+
+.footer-icon {
+    text-decoration: none;
+    font-size: 1.35rem;
+    margin: 0 0.1em;
+}
+
+
+/* MEDIA QUERIES - PRECISE */
+@media (min-width: 373px) and (max-width: 691px) {
+    .fa-paintbrush-deco {
+        top: 1.35em;
+    }
+}
+
+@media (min-width: 692px) and (max-width: 767px) {
+    .fa-paintbrush-deco {
+        top: 1em;
+    }
+}
+
+
+/* MEDIA QUERIES - COMMON */
+@media (min-width: 480px) and (max-width: 767px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .submit-btn {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 768px) {
+    /* DECORATION */
+    .fa-paintbrush-deco {
+        font-size: 9rem;
+        top: 1.075em;
+        right: 30%;
+    }
+
+
+    /* TYPOGRAPHY */
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+
+    /* SHARED STYLES */
+    input, select, .submit-btn {
+        height: 3rem;
+    }
+
+
+    /* HEADER */
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+
+
+    /* MAIN */
+    main h1 {
+        margin: 2.5em 0 1.5em;
+    }
+
+    
+    /* MAIN FORM */
+    .app-container {
+        padding-bottom: 1em;
+    }
+
+    form {
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1.5em;
+        padding: 2em 1.75em 3.5em;
+    }
+
+    .input-starting-color-container {
+        grid-column: span 2;
+    }
+
+    .select-color-scheme-type-container {
+        grid-column: span 5;
+    }
+
+    .submit-btn {
+        grid-column: span 3;
+        align-self: flex-start;
+        margin-top: 1.9375rem;
+    }
+
+
+    /* DISPLAY COLORS SECTION */
+    .display-colors-section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .color-box {
+        height: 21em;
+        margin-bottom: 1em;
+    }
+
+    .display-colors-section :last-child .color-box {
+        border-radius: 0;
+    }
+
+    .color-code-btn {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .color-code-btn .fa-copy {
+        margin-right: 0.45em;
+        color: #949494;
+        pointer-events: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* DECORATION */
+    .fa-droplet-deco,
+    .fa-palette-deco {
+        display: block;
+        position: absolute;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        opacity: 0.05;
+    }
+    
+    .fa-droplet-deco {
+        font-size: 37rem;
+        top: 0.75em;
+        left: 6%;
+        z-index: -2;
+        rotate: 15deg;
+    }
+    
+    .fa-palette-deco {
+        font-size: 20rem;
+        top: 2.2275em;
+        right: 8.5%;
+        z-index: -3;
+    }
+}
