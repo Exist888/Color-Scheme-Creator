@@ -28,8 +28,10 @@ function handleErrorMsg() {
         <div class="error-message" id="error-message">
             <p>Sorry, the data source is not sending colors at the moment.</p>
             <p>Please refresh the page, or 
-            <a href="https://www.linkedin.com/in/filip-herbst/" target="_blank">
-            contact me</a> if this issue persists.
+                <a href="https://www.linkedin.com/in/filip-herbst/" target="_blank">
+                    contact me
+                </a>
+                if this issue persists.
             </p>
         </div>
     `
@@ -58,7 +60,7 @@ function handleColorSchemeForm() {
 
         fetchColorScheme();
         scrollToColors();
-    })
+    });
 }
 
 function scrollToColors() {
@@ -148,7 +150,7 @@ function getDistanceFromTop() {
     const distanceForSmallScreen = 670;
 
     if (window.innerWidth >= 768) {
-        return distanceFromTop = distanceForMediumLargeScreen
+        return distanceFromTop = distanceForMediumLargeScreen;
     } else {
         return distanceFromTop = distanceForSmallScreen;
     }
