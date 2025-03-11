@@ -105,7 +105,7 @@ function renderColors(colorsArray) {
     const updatedColorBoxes = Array.from(document.querySelectorAll(".color-box"));
     updatedColorBoxes.forEach(function(colorBox, index) {
         colorBox.style.backgroundColor = colorsArray[index].hex.value; 
-    })
+    });
     enableCopyColorCode();
 }
 
