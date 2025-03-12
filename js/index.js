@@ -123,10 +123,10 @@ function copyColorCode(e) {
         e.stopPropagation();
         navigator.clipboard.writeText(codeToCopy)
         .then(function() {
-            alert("Color code sucessfully copied 😊")
+            alert("Color code sucessfully copied 😊");
         })
         .catch(function() {
-            alert("Sorry, there was an error copying the color code.")
+            alert("Sorry, there was an error copying the color code.");
         });
     }
 }
