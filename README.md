@@ -1,6 +1,9 @@
 # __Color Scheme Creator__
-### __Perfect for designers who want to generate beautiful color schemes in seconds__
-- Customize your starting color or let the app randomize colors for you.
+### __Perfect for designers who want to generate beautiful color schemes__
+- Customize your starting color (or let the app randomize one for you).
+- Choose your color scheme type.
+- Generate a color scheme quickly.
+- Copy color codes and paste into design software.
 - Ready to try it out? Go to my <a href="https://color-scheme-creator-exist888.netlify.app/">__color scheme creator app__</a>.
 <br/>
 
