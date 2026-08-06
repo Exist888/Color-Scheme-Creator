@@ -1,7 +1,7 @@
 # __Color Scheme Creator__
-### __Perfect for designers who want to generate beautiful color schemes on the fly__
 > Coded from scratch using design files provided by Scrimba as part of the Scrimba Frontend Web Development course.
-<br/>
+
+### __Perfect for designers who want to generate beautiful color schemes on the fly__
 - Customize your starting color (or let the app randomize one for you).
 - Choose your color scheme type.
 - Copy color codes and paste into design software.
