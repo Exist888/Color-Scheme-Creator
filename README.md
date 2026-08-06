@@ -1,5 +1,5 @@
 # __Color Scheme Creator__
-Coded from scratch while modifying designs provided by Scrimba as part of Scrimba's Frontend Web Development course.
+Coded from scratch using and modifying designs provided by Scrimba as part of Scrimba's Frontend Web Development course.
 <br/><br/>
 
 ### __Perfect for designers who want to generate beautiful color schemes on the fly__
