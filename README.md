@@ -1,5 +1,5 @@
 # __Color Scheme Creator__
-### __Perfect for designers who want to generate beautiful color schemes__
+### __Perfect for designers who want to generate beautiful color schemes on the fly__
 - Customize your starting color (or let the app randomize one for you).
 - Choose your color scheme type.
 - Copy color codes and paste into design software.
